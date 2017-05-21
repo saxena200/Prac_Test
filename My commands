@@ -1,0 +1,11 @@
+The following command deletes a bucket policy from a bucket named my-bucket: 
+aws s3api delete-bucket-policy --bucket my-bucket
+
+-- When the bucket is not empty -first emty the bucket using the below cmd
+Use the following command to remove all objects without specifying a prefix.
+$ aws s3 rm s3://bucket-name --recursive
+or
+do this
+$ aws s3 rb s3://bucket-name --force  
+
+
