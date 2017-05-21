@@ -9,3 +9,4 @@ do this
 $ aws s3 rb s3://bucket-name --force  
 
 
+aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
