@@ -1,0 +1,18 @@
+1. The following command deletes a bucket policy from a bucket named my-bucket: 
+      aws s3api delete-bucket-policy --bucket my-bucket
+
+2. When the bucket is not empty -first emty the bucket using the below cmd
+2.1 Use the following command to remove all objects without specifying a prefix.
+      $ aws s3 rm s3://bucket-name --recursive
+  or
+    do this
+      $ aws s3 rb s3://bucket-name --force  
+
+3. For connecting to the ec2 instance just ssh to the instance using the below command on mac (point to remeber - "" (in the path name) 
+ssh -i "downloads/KP_Dev_Prac.pem" ec2-user@ec2-54-191-242-249.us-west-2.compute.amazonaws.com
+
+4. To Terminate ec2 instance
+aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
+
+5. Security groups are stateful and Network ACl's are stateless.
+6. VPC pairing can only be star schema only
