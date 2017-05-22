@@ -15,3 +15,4 @@ ssh -i "downloads/KP_Dev_Prac.pem" ec2-user@ec2-54-191-242-249.us-west-2.compute
 aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
 
 5. Security groups are stateful and Network ACl's are stateless.
+6. VPC pairing can only be star schema only
